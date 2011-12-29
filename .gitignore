@@ -1,0 +1,9 @@
+*.log
+*.pyc
+*.swp
+*.db
+MANIFEST
+dist/*
+build/*
+*.egg-info
+dropin.cache

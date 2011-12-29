@@ -1,0 +1,14 @@
+# Schema definitions for whisper files. Entries are scanned in order,
+# and first match wins.
+#
+#  [name]
+#  pattern = regex
+#  retentions = timePerPoint:timeToStore, timePerPoint:timeToStore, ...
+
+[carbon]
+pattern = ^carbon\.
+retentions = 60:90d
+
+[default_1min_for_1day]
+pattern = .*
+retentions = 60s:1d
